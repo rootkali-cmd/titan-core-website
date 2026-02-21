@@ -1,0 +1,88 @@
+[
+  {
+    "inGameName": "Ahmed",
+    "playerId": "5153876297",
+    "region": "EU",
+    "age": 18,
+    "currentRank": "Diamond",
+    "kd": 9,
+    "roles": [
+      "Entry"
+    ],
+    "availability": "من 12 ص الي 2 ص",
+    "previousExperience": "لم اقم بالدخول الي مسابقات من قبل",
+    "contactMethod": "Telegram",
+    "whatsappNumber": null,
+    "telegramUsername": "@G_M_L_M",
+    "discord": null,
+    "notes": null,
+    "status": "PENDING",
+    "createdAt": "2026-02-21T15:20:39.210Z",
+    "id": 1
+  },
+  {
+    "inGameName": "TestPlayer",
+    "playerId": "123456789",
+    "region": "MENA",
+    "age": 20,
+    "currentRank": "Ace",
+    "kd": 3.1,
+    "roles": [
+      "IGL",
+      "Flex"
+    ],
+    "availability": "Daily 8pm-11pm",
+    "previousExperience": "Played in local scrims and small tournaments.",
+    "contactMethod": "Telegram",
+    "whatsappNumber": null,
+    "telegramUsername": "@test_user1",
+    "discord": "test#1234",
+    "notes": "test submit",
+    "status": "PENDING",
+    "createdAt": "2026-02-21T15:33:39.301Z",
+    "id": 2
+  },
+  {
+    "inGameName": "BotCheck",
+    "playerId": "999111222",
+    "region": "MENA",
+    "age": 21,
+    "currentRank": "Ace",
+    "kd": 4.2,
+    "roles": [
+      "IGL"
+    ],
+    "availability": "Daily",
+    "previousExperience": "Scrims and cups",
+    "contactMethod": "Telegram",
+    "whatsappNumber": null,
+    "telegramUsername": "@test_user1",
+    "discord": null,
+    "notes": "telegram check",
+    "status": "PENDING",
+    "createdAt": "2026-02-21T15:53:02.739Z",
+    "id": 3
+  },
+  {
+    "inGameName": "Ahmed",
+    "playerId": "5153876297",
+    "region": "MENA",
+    "age": 16,
+    "currentRank": "Diamond",
+    "kd": 1,
+    "roles": [
+      "Entry",
+      "Support"
+    ],
+    "availability": "من 12 ص الي 2 ص",
+    "previousExperience": "لا يوجد مسابقات سابقه",
+    "contactMethod": "Telegram",
+    "whatsappNumber": null,
+    "telegramUsername": "@G_M_L_M",
+    "discord": null,
+    "notes": null,
+    "status": "PENDING",
+    "createdAt": "2026-02-21T16:21:02.482Z",
+    "id": 4
+  }
+]

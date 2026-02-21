@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Application {
+  id                 Int      @id @default(autoincrement())
+  inGameName         String
+  playerId           String
+  region             String
+  age                Int
+  currentRank        String
+  kd                 Float
+  roles              String
+  availability       String
+  previousExperience String
+  contactMethod      String
+  whatsappNumber     String?
+  telegramUsername   String?
+  discord            String?
+  notes              String?
+  status             String   @default("PENDING")
+  createdAt          DateTime @default(now())
+}

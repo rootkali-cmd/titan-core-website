@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --titan-orange: 249 115 22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-cairo), "Segoe UI", Tahoma, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-orbitron), var(--font-cairo), sans-serif;
+}
+
+.button-glow {
+  box-shadow: 0 0 0 rgba(var(--titan-orange) / 0);
+}
+
+.button-glow:hover {
+  box-shadow:
+    0 0 24px rgba(var(--titan-orange) / 0.35),
+    0 0 40px rgba(var(--titan-orange) / 0.18);
+}
+
+.animate-fade-in {
+  animation: fade-in 700ms ease-out both;
+}
+
+.animate-fade-up {
+  animation: fade-up 800ms ease-out both;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 1.8s ease-in-out infinite;
+}
+
+.animate-check-pop {
+  animation: check-pop 700ms ease-out both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(var(--titan-orange) / 0.15);
+  }
+  50% {
+    box-shadow:
+      0 0 34px rgba(var(--titan-orange) / 0.45),
+      0 0 70px rgba(var(--titan-orange) / 0.28);
+  }
+}
+
+@keyframes check-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
