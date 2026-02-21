@@ -4,7 +4,12 @@ import path from "node:path";
 import { prisma } from "@/lib/prisma";
 import type { ApplicationSubmissionValues } from "@/lib/validation";
 
-const jsonStorePath = path.join(process.cwd(), "data", "applications.json");
+const isVercelRuntime = process.env.VERCEL === "1";
+const jsonStorePath = process.env.JSON_STORAGE_PATH
+  ? path.resolve(process.cwd(), process.env.JSON_STORAGE_PATH)
+  : isVercelRuntime
+    ? path.join("/tmp", "titan-core-applications.json")
+    : path.join(process.cwd(), "data", "applications.json");
 let prismaAvailable = true;
 
 const normalizeOptional = (value?: string) => {
